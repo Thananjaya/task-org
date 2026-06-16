@@ -137,9 +137,7 @@ GEM
     marcel (1.2.1)
     matrix (0.4.3)
     mini_mime (1.1.5)
-    minitest (6.0.6)
-      drb (~> 2.0)
-      prism (~> 1.5)
+    minitest (5.27.0)
     msgpack (1.8.3)
     mutex_m (0.3.0)
     net-imap (0.6.4.1)
@@ -234,14 +232,16 @@ GEM
     reline (0.6.3)
       io-console (~> 0.5)
     rexml (3.4.4)
-    rubyzip (3.4.0)
+    rubyzip (2.4.1)
     securerandom (0.4.1)
-    selenium-webdriver (4.45.0)
+    selenium-webdriver (4.18.1)
       base64 (~> 0.2)
-      logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
-      rubyzip (>= 1.2.2, < 4.0)
+      rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    simple_form (5.4.1)
+      actionpack (>= 7.0)
+      activemodel (>= 7.0)
     sprockets (4.2.2)
       concurrent-ruby (~> 1.0)
       logger
@@ -293,10 +293,12 @@ DEPENDENCIES
   debug
   jbuilder
   jsbundling-rails (~> 1.0)
+  minitest (~> 5.25)
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.1.4)
-  selenium-webdriver
+  selenium-webdriver (= 4.18.1)
+  simple_form
   sprockets-rails
   stimulus-rails
   turbo-rails
